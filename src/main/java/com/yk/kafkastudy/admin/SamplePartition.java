@@ -14,15 +14,13 @@ public class SamplePartition implements Partitioner {
             key-2
             key-3
          */
-
         String keyStr = key + "";
         String keyInt = keyStr.substring(4);
-        System.out.println("keyStr : "+keyStr + "keyInt : "+keyInt);
+        System.out.println("keyStr : "+keyStr + ", keyInt : "+keyInt);
 
         int i = Integer.parseInt(keyInt);
 
         return i%2;
-
     }
 
     @Override
